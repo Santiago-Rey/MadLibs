@@ -39,12 +39,6 @@ class StoryActivity : AppCompatActivity() {
         textS.text = allText
 
 
-
-
-
-
-
-
             val newContent: String  = allText.replace(Words.listWords[1], Words.safeWords[1])
             textS.text = newContent
 
