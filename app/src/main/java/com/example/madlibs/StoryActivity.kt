@@ -38,12 +38,15 @@ class StoryActivity : AppCompatActivity() {
         val textS = findViewById<TextView>(R.id.storyText) // Mostramos el archivo en el textView
         textS.text = allText
 
-
-            val newContent: String  = allText.replace(Words.listWords[1], Words.safeWords[1])
-            textS.text = newContent
-
+        var i = 0;
+       while (i < Words.listWords.size ){
 
 
+           var newContent: String  = allText.replace(Words.listWords[i], Words.safeWords[i])
+           textS.text = newContent
+           i++
+
+       }
 
         textS.text
 
